@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>VBCC Wolf</title>
   <link rel="stylesheet" href="style.css" />
@@ -20,6 +20,27 @@
     </div>
 
     <div id="playerNames" style="display:none;"></div>
+
+    <div id="game" style="display:none;">
+      <h2 id="holeTitle">Hole 1</h2>
+      <div id="scoreInputs"></div>
+      <div id="holeSum">Hole Total: $<span id="holeTotal">0</span></div>
+      <div class="button-bar">
+        <button onclick="previousHole()">←</button>
+        <button id="nextHoleBtn" onclick="nextHole()" disabled>→</button>
+      </div>
+      <div class="bottom-buttons">
+        <button id="umbrellaBtn">Umbrella</button>
+        <button onclick="showSummary()">View Summary</button>
+      </div>
+    </div>
+
+    <div id="summary" style="display:none;">
+      <h2>Game Summary</h2>
+      <table id="summaryTable" border="1"></table>
+      <img id="umbrellaLogo" src="umbrella_logo.png" style="display:none; width: 80px;" />
+      <button onclick="backToGame()">Back</button>
+    </div>
 
     <script src="script.js"></script>
   </div>

@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <button id="themeToggle">🌙</button>
   <div class="container">
     <h1>VBCC Wolf</h1>
 
@@ -30,7 +31,6 @@
         <button id="nextHoleBtn" onclick="nextHole()" disabled>→</button>
       </div>
       <div class="bottom-buttons">
-        <button id="umbrellaBtn">Umbrella</button>
         <button onclick="showSummary()">View Summary</button>
       </div>
     </div>
@@ -38,7 +38,6 @@
     <div id="summary" style="display:none;">
       <h2>Game Summary</h2>
       <table id="summaryTable" border="1"></table>
-      <img id="umbrellaLogo" src="umbrella_logo.png" style="display:none; width: 80px;" />
       <button onclick="backToGame()">Back</button>
     </div>
 

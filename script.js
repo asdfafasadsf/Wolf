@@ -1,4 +1,3 @@
-
 let playerCount = 0;
 let players = [];
 let scores = [];
@@ -147,7 +146,8 @@ function backToGame() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  document.getElementById("umbrellaBtn").addEventListener("click", function () {
-    document.getElementById("umbrellaLogo").style.display = "block";
+  const toggle = document.getElementById("themeToggle");
+  toggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
   });
 });
